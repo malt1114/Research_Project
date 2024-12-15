@@ -567,8 +567,8 @@ city = str(sys.argv[1]).lower()
 
 print(city, flush = True)
 
-dir_path = f'data/bike_network_data/{city}'
-export_path = f'data/bike_network_data/{city}/processed'
+dir_path = f'data/bike_sharing_data/{city}'
+export_path = f'data/bike_sharing_data/{city}/processed'
 
 try:
     combined_df = pd.read_csv(f'{export_path}/preprocessed_bike_rides.csv')
